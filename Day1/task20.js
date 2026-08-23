@@ -1,0 +1,13 @@
+var num1=window.prompt("num1")
+var num2=window.prompt("num2")
+var sum = (+num1) + (+num2)
+var diff = (+num1) - (+num2)
+var mul = (+num1) * (+num2)
+var div = (+num1) / (+num2)
+var mod = (+num1) % (+num2)
+console.log(sum)
+console.log(diff)
+console.log(mul)
+console.log(div)
+console.log(mod)
+

@@ -1,0 +1,5 @@
+var quantity =window.prompt("enter quantity")
+console.log(typeof quantity)
+console.log(typeof +quantity)
+console.log(typeof Number(quantity))
+console.log(typeof parseInt(quantity))
