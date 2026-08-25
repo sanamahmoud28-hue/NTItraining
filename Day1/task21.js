@@ -3,4 +3,4 @@ var b = 50;
 var c = "60"; 
 var d = 30; 
 var e = 30; 
-console.log(a + b + (+c) + d + e);
+console.log(a + b + (+c) + d + e); // before correction it will output 906060
