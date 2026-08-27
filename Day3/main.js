@@ -47,6 +47,9 @@ for(var i = 1;i<=5;i++){
     sum+=Math.random()*51
 
 }
+
+
+
 avg=sum/5
 console.log(avg.toFixed(2))
 //task3
@@ -107,6 +110,8 @@ var str="HELLO"
 for(var i = 0;i<=4;i++){
     console.log(str[i])
 }
+
+
 
 sum =0
 arr=[10,20,30,40]
