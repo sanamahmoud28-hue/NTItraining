@@ -9,11 +9,8 @@ var products=[{
 
 
 
-
-
-
 function CreateProduct(name,price,category,quantity){
-    newid = products.id + 1
+    newid = products.length + 1
     product={
     id: newid,
     name: name,
@@ -21,9 +18,9 @@ function CreateProduct(name,price,category,quantity){
     category: category,
     quantity: quantity
 }
-name.trim()
-category.trim()
-if(name=""){
+name=name.trim()
+category=category.trim()
+if(name==""){
     return "enter the correct name"
 }
 if(price<0){
@@ -50,16 +47,20 @@ function printProducts(list){
 
 
 
-function getAllProducts(products){
-    printProducts(list)
-    products = list
-    return list
+function getAllProducts(){
+    printProducts(products)
+    return products
 }
 
 
 
 function getProductbyID(id){
-    list.id.find(newid,"null")
+   products.find(product=>product.id==id)
+   if(id=="undefined"){
+   return "null"
+   }
+   return product
+    
 }
 
 
@@ -158,8 +159,5 @@ default:
 }
 
 }
-
- 
-
-    
+   
 startapp()
